@@ -1,0 +1,81 @@
+﻿<Window x:Class="PR1_0101.addNewGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR1_0101"
+        mc:Ignorable="d"
+        Title="addNewGameWindow" Height="630" Width="400" FontFamily="Bahnschrift">
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="Images/Логотип.png"  Grid.ColumnSpan="3"/>
+            <TextBlock Grid.Row="1" Text="Добавление новой игры" Grid.Column="0" Grid.ColumnSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="23"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.RowSpan="3" Width="300" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Название игры: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+            <TextBox x:Name="TBnameGame" FontSize="19" Height="30" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" Margin="0,5"/>
+
+            <TextBlock Text="Категория: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+            <ComboBox x:Name="CBcategory" FontSize="19" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Margin="0,5"/>
+
+            <TextBlock Text="Жанр: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+            <ComboBox x:Name="CBgenre" FontSize="19" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,5"/>
+
+            <TextBlock Text="Тематика: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3"/>
+            <ComboBox x:Name="CBthematics" FontSize="19" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" Margin="0,5"/>
+
+            <TextBlock Text="Возрастное ограничение: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" TextWrapping="Wrap"/>
+            <ComboBox x:Name="CBageLimit" FontSize="19" VerticalAlignment="Center" Height="30" Grid.Column="1" Grid.Row="4" Margin="0,5"/>
+
+            <TextBlock Text="Описание: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="5"/>
+            <TextBox x:Name="TBdescription" FontSize="19" VerticalAlignment="Center" Height="60" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Margin="0,5"/>
+
+            <TextBlock Text="Фото: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="6"/>
+            <Border Height="60" Grid.Column="1" Grid.Row="6" Margin="0,5" BorderBrush="Black" BorderThickness="0.4" MouseLeftButtonDown="Image_Click" Background="Transparent">
+                <Image x:Name="Iphoto"/>
+            </Border>
+
+            <TextBlock Text="Цена: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="7"/>
+            <TextBox x:Name="TBcost" FontSize="19" VerticalAlignment="Center" Height="30" Grid.Column="1" Grid.Row="7" Margin="0,5"/>
+
+            <TextBlock Text="Эксклюзив: " FontSize="19" VerticalAlignment="Center" Grid.Column="0" Grid.Row="8"/>
+            <CheckBox x:Name="CBexclusivity" FontSize="19" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Grid.Column="1" Grid.Row="8" Margin="0,5"/>
+
+            <Button x:Name="BTNaddNewGame"  Width="150" Grid.ColumnSpan="2" Grid.Row="9" Height="40" Background="#FFB6F63E" Content="Добавить" FontSize="17" Margin="0,5,0,5" Click="BTNaddNewGame_Click"/>
+        </Grid>
+    </Grid>
+</Window>

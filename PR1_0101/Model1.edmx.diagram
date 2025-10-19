@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3067497dbe1d442d854fe8882e7ccc14" Name="Diagram1">
+        <EntityTypeShape EntityType="GameModel.BoardGames" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Category" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.GameNights" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.GameNightsApplications" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.GameNightsParticipiants" Width="1.5" PointX="10.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Genre" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.ListOfGames" Width="1.5" PointX="10.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Role" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Status" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Thematics" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Tournaments" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.TournamentsApplications" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.TournamentsParticipiants" Width="1.5" PointX="7.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Users" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="GameModel.FK_BoardGames_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_BoardGames_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_BoardGames_Thematics" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_ListOfGames_BoardGames" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_Tournaments_BoardGames" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNights_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNightsApplications_GameNights" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNightsParticipiants_GameNights" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_ListOfGames_GameNights" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNightsApplications_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNightsApplications_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_GameNightsParticipiants_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_Users_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_TournamentsApplications_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_Tournaments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_TournamentsParticipiants_Tournaments" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_TournamentsApplications_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GameModel.FK_TournamentsParticipiants_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
